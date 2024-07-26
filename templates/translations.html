@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Translations</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>Translations</h1>
+<table class="table">
+<thead>
+<tr>
+<th>English Saying</th>
+<th>Dutch Translation</th>
+</tr>
+</thead>
+<tbody>
+{% for saying in sayings %}
+<tr>
+<td>{{ saying.english_saying }}</td>
+<td>{{ saying.dutch_translation }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
